@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+  ~ nemesis Platform - NExt-generation Multichannel E-commerce SYStem
+  ~
+  ~ Copyright (c) 2010 - 2013 nemesis
+  ~ All rights reserved.
+  ~
+  ~ This software is the confidential and proprietary information of nemesis
+  ~ ("Confidential Information"). You shall not disclose such Confidential
+  ~ Information and shall use it only in accordance with the terms of the
+  ~ license agreement you entered into with nemesis.
+  -->
+<Context path="/backend" reloadable="true">
+    <ResourceLink name="websiteBaseUrl" global="websiteBaseUrl"/>
+    <ResourceLink name="restBaseUrl" global="restBaseUrl"/>
+</Context>

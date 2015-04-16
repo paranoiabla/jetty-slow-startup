@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  ~ nemesis Platform - NExt-generation Multichannel E-commerce SYStem
+  ~
+  ~ Copyright (c) 2010 - 2013 nemesis
+  ~ All rights reserved.
+  ~
+  ~ This software is the confidential and proprietary information of nemesis
+  ~ ("Confidential Information"). You shall not disclose such Confidential
+  ~ Information and shall use it only in accordance with the terms of the
+  ~ license agreement you entered into with nemesis.
+  -->
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         version="3.0"
+         xmlns="http://java.sun.com/xml/ns/javaee"
+         xsi:schemaLocation="http://java.sun.com/xml/ns/javaee
+            http://java.sun.com/xml/ns/javaee/web-app_3_0.xsd" metadata-complete="true">
+
+    <display-name>backend</display-name>
+
+    <context-param>
+        <param-name>webAppRootKey</param-name>
+        <param-value>webapp.root.backend</param-value>
+    </context-param>
+
+    <welcome-file-list>
+        <welcome-file>/console</welcome-file>
+    </welcome-file-list>
+
+    <session-config>
+        <session-timeout>15</session-timeout>
+    </session-config>
+</web-app>

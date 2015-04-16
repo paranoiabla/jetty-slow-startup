@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+  ~ nemesis Platform - NExt-generation Multichannel E-commerce SYStem
+  ~
+  ~ Copyright (c) 2010 - 2013 nemesis
+  ~ All rights reserved.
+  ~
+  ~ This software is the confidential and proprietary information of nemesis
+  ~ ("Confidential Information"). You shall not disclose such Confidential
+  ~ Information and shall use it only in accordance with the terms of the
+  ~ license agreement you entered into with nemesis.
+  -->
+<Configuration status="INFO">
+    <Appenders>
+        <Console name="CONSOLE" target="SYSTEM_OUT">
+            <PatternLayout pattern="%highlight{%d [%t] %-5level: %msg%n%throwable}"/>
+        </Console>
+    </Appenders>
+    <Loggers>
+        <Root level="trace">
+            <AppenderRef ref="CONSOLE" level="INFO"/>
+        </Root>
+        <Logger name="org.apache.logging.log4j.org.springframework" level="debug" additivity="false">
+            <AppenderRef ref="CONSOLE" level="debug"/>
+        </Logger>
+        <Logger name="org.apache.logging.log4j.org.springframework.aop.framework.Cglib2AopProxy" level="error"
+                additivity="false">
+            <AppenderRef ref="CONSOLE" level="error"/>
+        </Logger>
+    </Loggers>
+</Configuration>
